@@ -20,7 +20,7 @@ app.post('/chat', async (req, res) => {
     const messages = req.body.messages;
 
     const chatResponse = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: 'o4-mini',
       messages: messages,
     });
 
